@@ -97,6 +97,7 @@ namespace TrilhaApiDesafio.Controllers
                 return NotFound("Nenhuma tarefa encontrada!");
 
             _context.Remove(tarefaBanco);
+            _context.SaveChanges();
 
             
             return NoContent();
